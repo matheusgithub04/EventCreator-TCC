@@ -1,0 +1,9 @@
+127.0.0.1 - - [11/Jul/2020:12:38:40 -0300] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Jul/2020:12:38:41 -0300] "GET /EventCreator/home.jsp HTTP/1.1" 200 19626
+0:0:0:0:0:0:0:1 - - [11/Jul/2020:12:38:41 -0300] "GET /EventCreator/img/Carousel.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Jul/2020:12:38:41 -0300] "GET /EventCreator/img/fight.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Jul/2020:12:38:41 -0300] "GET /EventCreator/img/calendario.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Jul/2020:12:38:41 -0300] "GET /EventCreator/img/local.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Jul/2020:12:38:41 -0300] "GET /EventCreator/img/propa.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Jul/2020:12:38:41 -0300] "GET /EventCreator/img/fut.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Jul/2020:12:38:41 -0300] "GET /EventCreator/img/logot.svg HTTP/1.1" 304 -

@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+body {
+    font-family: 'SST W01 Roman','SST W02 Roman','SST W10 Roman','SST W15 Roman',Arial,Helvetica,sans-serif;
+    background-color: #ff1040;
+ 
+    width: 100%;
+    height: 100%;
+    min-width: 20%;
+    min-height: 20%;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+#navbar{
+    width: 100%;
+    height: 50%;
+}
+
+
+#logo{
+    max-width: 280px;
+    min-width: 200px;
+    height: 48px;
+    max-height: 80;
+    margin-left: 5rem;
+   
+}
+
+.nav-item {
+    float: right;
+    display: flex;
+    justify-content: end;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+
+.navbar-toggler{
+    background-color: white;
+    text-align: center;
+}
+
+.carousel-item{
+    max-width: 100%;
+    max-height: 1000px;
+   
+}
+
+
+
+
+.padding-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+#sectioncards{
+    text-align: center;
+    display: block;
+    background-color: #111,;
+    width: 100%;
+    background-repeat: no-repeat;
+    border-bottom: 100px solid transparent;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: transparent;
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .box {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .box {
+        width: 33.3333%;
+    }
+}
+
+.box .imgBx {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+    opacity: 0;
+}
+
+.box .content {
+    
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+   /* background: rgba(0, 0, 0, 0.808);*/   
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.box:hover .content {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.box .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.box .content p {
+    color: whitesmoke;
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+   
+}
+
+.box:hover .content p {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/*APP*/
+
+#sectionApp {
+    background-color: #e2e8f0;
+
+    width: 100%;
+}
+
+#smartphone {
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    min-height: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.containerApp,
+.panel {
+    padding: 0.01em 16px;
+}
+
+.contentApp {
+    max-width: 980px;
+}
+
+.contentApp,
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#AppText {
+    border-radius: 50px red;
+    color: #ff1040;
+}
+
+
+.container2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/*footer*/
+
+.footer{
+    padding-top: 5rem;
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+.form{  
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#cpf{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#senha{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#confirmarsenha{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#nome{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#telefone{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#logradouro{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#numero{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#bairro{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#complemento{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#cidade{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#estado{
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#botao{
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}

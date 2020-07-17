@@ -1,0 +1,14 @@
+127.0.0.1 - - [07/Apr/2020:19:14:51 -0300] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:14:53 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 500 2864
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:14:53 -0300] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:17:12 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 500 2864
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:21:52 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 500 2864
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:21:53 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 500 2864
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:23:07 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 200 1900
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:23:59 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 200 1900
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:44:51 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 200 2193
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:44:53 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 200 2193
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:45:27 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 200 426
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:45:55 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 200 2193
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:46:36 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 200 451
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:19:49:09 -0300] "GET /EventCreator/listEvent.jsp HTTP/1.1" 200 2218

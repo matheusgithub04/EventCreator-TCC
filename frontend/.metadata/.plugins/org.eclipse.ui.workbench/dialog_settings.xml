@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.jboss.tools.cdi.ui"/>
+			<item value="org.jboss.ide.eclipse.ui.wizards"/>
+			<item value="org.jboss.tools.jst.web"/>
+			<item value="org.jboss.tools.central.ui.wizard.category"/>
+			<item value="org.fusesource.ide.newwizards"/>
+			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.jst.ws.ui.new"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item key="dialogHeight" value="-1"/>
+		<item key="dialogWidth" value="-1"/>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textEntries">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+</section>

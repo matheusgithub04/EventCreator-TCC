@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/Servers/Tomcat v8.5 Server at localhost-config/web.xml">
+ <TreeFormPage>
+  <Memento type="FileWebApp31">
+   <Memento collapsed="false" type="Deployment Descriptor"/>
+   <Memento collapsed="false" type="Context Params"/>
+   <Memento collapsed="false" type="Advanced"/>
+  </Memento>
+  <Memento type="WebAppLocaleEncodingMappingList">
+   <Memento type="Locale Encoding Mappings"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>

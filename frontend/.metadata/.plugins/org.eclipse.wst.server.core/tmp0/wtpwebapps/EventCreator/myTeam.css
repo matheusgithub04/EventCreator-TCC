@@ -1,0 +1,363 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    font-size:16px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: rgb(17,17,17);
+    background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(255,16,64,1) 50%, rgba(17,17,17,1) 100%);
+}
+
+.divBack {
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 3px solid #ff1040;
+    width: 10%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.divBack:hover {
+    cursor: pointer;
+    background-color: #ff1040;
+}
+
+.btBack {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 2vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+.btBack:hover {
+    cursor: pointer;
+    background-color: #ff1040;
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nameTeam {
+    margin-top: 20px;
+    color: white;
+    font-family: helvetica;
+    font-size: 35px;
+}
+
+.imageTeam {
+    margin-top: 30px;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image {
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    /* background-color: white; */
+    background-image: url('http://localhost:3516/files/terno.jpeg');
+    background-size: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7), 0 6px 20px 0 rgba(255, 255, 255, 0.7);
+}
+
+.input-file {
+    height: 100%; 
+    width: 100%; 
+    border-radius: 100px; 
+    display: none;
+}
+
+.wins {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    background-color: #ff1040;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7), 0 6px 20px 0 rgba(255, 255, 255, 0.7);
+    border: 3px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.numberWin {
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: Magneto;
+    font-weight: bold;
+    color: white;
+}
+
+.textVictory {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.nameOrg {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.borders {
+    border: 2px solid white;
+    margin-top: 30px;
+    border-radius: 100px;
+
+    width: 60%;
+}
+.participantes {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.addPlus {
+    margin-top: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.participante {
+    margin-top: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('http://localhost:3516/files/terno.jpeg'); */
+    background-size: cover;
+}
+.add {
+    color: white;
+}
+
+.modalAddParticipant {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+.container-modal-add {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 40%;
+    height: 90%;
+    left: 30%;
+    top: 5%;
+    flex-direction: column;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-add-participante {
+    margin-top: 20px;
+    width: 90%;
+    height: 5%;
+    left: 5%;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #ff1040;
+    flex-direction: row;
+}
+
+.input-add-participantes {
+    width: 90%;
+    height: 100%;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #ff1040;
+}
+
+.search {
+    height: 100%;
+    margin-left: 10px;
+}
+
+.closeModal {
+    left: 2%;
+    top: 2%;
+    height: 200px;
+    width: 200px;
+    display: none;
+    position: absolute;
+    color: white;
+}
+.scrollview-participantes {
+    height: inherit;
+    width: 90%;
+    align-items: center;
+    overflow: auto;
+}
+
+#participante {
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+    border: 1px solid black;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.btSubmitAdd {
+    background-color: #ff1040;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: white;
+    font-family: helvetica;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btSubmitAdd:hover {
+    background-color: #aa1040;
+}
+
+.image-participante {
+    background-image: url('http://localhost:3516/files/terno.jpeg');
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.view-conjuct {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nmTime {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: helvetica;
+    font-size: 20px;
+}
+
+.createTeam {
+    border: 2px solid white;
+    margin-top: 20px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-family: helvetica;
+    font-size: 19px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.createTeam:hover {
+    background-color: rgba(255,16,64,1);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+    .imageTeam {
+        width: 100%;
+    }
+    .participantes {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .imageTeam {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .wins {
+        margin-top: 20px;
+    }
+
+    .borders {
+        width: 90%;
+    }
+
+}
+@media only screen and (max-width: 900px) {
+    .container-modal-add {
+        width: 80%;
+        left: 10%;
+    }
+    
+    .closeModal {
+        width: 50px;
+    }   
+
+    .input-add-participantes {
+        width: 80%;
+    }
+
+    .input-add-participante {
+        justify-content: center;
+        align-items: center;
+    }
+
+}

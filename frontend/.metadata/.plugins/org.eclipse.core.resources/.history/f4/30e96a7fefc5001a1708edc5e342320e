@@ -1,0 +1,259 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Entrar</title>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="jQuery Mask/jquery.mask.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css" />
+<link rel='stylesheet' href='style.css' />
+<link rel="shortcut icon" type="image/x-icon" href="img/ico.png">
+<style>
+    body {
+        font-family: 'SST W01 Roman','SST W02 Roman','SST W10 Roman','SST W15 Roman',Arial,Helvetica,sans-serif;
+        background-image: url(img/backlogin.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90vh;
+    }
+    
+    a {
+        color: white;
+    }
+    a:link{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        text-decoration: none;
+        color: white
+    }
+    
+    #loginG {
+        color: #ff1040;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .cont {
+        position: relative;
+        width: 25%;
+        height: 400px;
+        padding: 10px 25px;
+        margin: 10vh auto;
+        background: #1e1e26;
+        border-radius: 8px;
+    }
+
+    .form {
+        width: 100%;
+        height: 100%;
+    }
+
+    h1,
+    h2,
+    .user,
+    .pass {
+        text-align: center;
+        display: block;
+    }
+
+    h1 {
+        color: #ff1040;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 30px auto;
+    }
+
+    .user,
+    .pass,
+        .login {
+            width: 100%;
+            height: 45px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: lighter;
+            margin-bottom: 20px;
+        }
+
+    .user,
+    .pass {
+        background: #ecf0f1;
+    }
+
+    .login {
+        color: white;
+        cursor: pointer;
+        margin-top: 20px;
+        background: #ff1040;
+        transition: 0.4s ease;
+        font-weight: bold;
+    }
+
+    input {
+        color: black;
+    }
+
+    .back {
+        width: 100%;
+        height: 45px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: lighter;
+      
+        color: white;
+        cursor: pointer;
+     
+        background: #ff1040;
+        transition: 0.4s ease;
+        font-weight: bold;
+    }
+
+    .login:hover {
+        background: #ff0033;
+    }
+
+    .back:hover {
+        background: #ff0033;
+    }
+
+
+    @media only screen and (min-width : 50px) {
+        .cont {
+            width: 300%
+        }
+    }
+
+    @media only screen and (min-width : 280px) {
+        .cont {
+            width: 90%
+        }
+    }
+
+    @media only screen and (min-width : 480px) {
+        .cont {
+            width: 60%
+        }
+    }
+
+    @media only screen and (min-width : 768px) {
+        .cont {
+            width: 40%
+        }
+    }
+
+    @media only screen and (min-width : 992px) {
+        .cont {
+            width: 30%
+        }
+    }
+
+    h2 {
+        color: #fff;
+        margin-top: 25px;
+    }
+</style>
+</head>
+<body>
+	<%
+		String cpf = request.getParameter("cpf");
+		String result = request.getParameter("result");
+		String urlIO = "1a48c08e71bf.ngrok.io";
+		if(result != null){
+			if(result.equals("right")){
+	%>
+		<div class="alert alert-danger" align="center">
+			Parabéns, você foi cadastrado(a) com sucesso!
+		</div>
+	<%	
+			}else if(result.equals("wrong")){
+	%>		
+		<script>
+		 	alert("Erro ao cadastrar, informações preenchidas incorretamente.");
+		 	window.location.href = "http://localhost/EventCreator/cad.jsp";
+		</script>
+	<%			
+			}else if(result.equals("wrongCpf")){
+	%>
+		<script>
+		 	alert("CPF inválido.");
+		 	window.location.href = "http://"+e158b64e9866.ngrok.io+"/EventCreator/cad.jsp";
+		</script>
+	<%			
+				
+			}else if(result.equals("wrongpassword")){
+	%>	
+		<script>
+		 	alert("Senhas incorretas.");
+		 	window.location.href = "http://"+e158b64e9866.ngrok.io+"/EventCreator/cad.jsp";
+		</script>
+	<%		
+			}else if(result.equals("length")){
+	%>		
+		<script>
+		 	alert("Tamanho do CPF ou telefone incorretos.");
+		 	window.location.href = "http://"+e158b64e9866.ngrok.io+"/EventCreator/cad.jsp";
+		</script>
+	<%
+			}else if(result.equals("wrongLog")){
+	%>	
+		<script>
+		 	alert("CPF ou senha inválidos.");
+		 	window.location.href = "http://"+e158b64e9866.ngrok.io+"/EventCreator/login.jsp";
+		</script>
+	<%		
+			}else{
+	%>	
+		<script>
+		 	alert("Ocorre algum erro, tente novamente.");
+		 	window.location.href = "http://"+e158b64e9866.ngrok.io+"/EventCreator/cad.jsp";
+		</script>
+	<%			
+			}
+				
+		}
+	%>	
+	<% String whois = (session.getAttribute("user") == null) ? "nobody" : session.getAttribute("user").toString();%>
+	<div class="cont">
+        <div class="form">
+			<form method="POST" action="process">
+			    <%if(whois.equals("nobody")){ %>
+			    	<h1 id="loginG">LOGIN</h1>
+			    	<% if(cpf != null){ %>		    		
+				    	<input type="text" class="user" name="cpf" value="<%=cpf %>" placeholder="CPF" required minlength="11" maxlength="11" id="cpfzao"/>
+				    <%}else { %>
+				    	<input type="text" class="user" name="cpf" placeholder="CPF" required minlength="11" maxlength="11" id="cpfzao"/>
+				    <%} %>
+				    <input type="password" class="pass" name="senha" placeholder="SENHA" required minlength="3"/>
+			    	<input type="hidden" name="log" value="true">
+			    	<button class="login">ENTRAR</button>
+			    <%}else{ %>
+			    	<input type="hidden" name="log" value="false">
+			    	<button class="login mt-5 mb-5">SAIR</button>
+			    <%} %>
+			    
+			    <input type="hidden" name="action" value="auth">
+			</form>
+			<button class="btn back mt-1"><a href="home.jsp">VOLTAR</a></button>
+		</div>
+	</div>
+	<script src="cadjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+abr 08, 2020 13:32:09.64 NEW SESSION
+abr 08, 2020 13:32:09.75 [1812:5672:0408/133209.627:ERROR:data_pack.cc(120)] Could not open pak file for writing: A operação solicitada não pode ser executada em um arquivo com uma seção mapeada pelo usuário aberta. (0x4C8)
+abr 08, 2020 15:47:18.58 [1812:12300:0408/154718.581:ERROR:socket_stream.cc(218)] Closing stream with result -2
+abr 08, 2020 17:23:25.51 [1812:12300:0408/172325.511:ERROR:socket_stream.cc(218)] Closing stream with result -2
+abr 08, 2020 17:23:31.65 [1812:12300:0408/172328.534:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+abr 08, 2020 17:23:31.66 [1812:11968:0408/172330.912:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.

@@ -1,0 +1,93 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"
+    import="java.net.*"
+    import="java.io.*"
+    import="org.json.*"
+    import="java.lang.Object.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/ico.png">
+<script src="js\jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css" />
+<script src="bootstrap\js\bootstrap.min.js"></script>
+<link rel='stylesheet' href='profile.css' />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="https://use.fontawesome.com/526c112d9c.js"></script>
+</head>
+<body>
+	<% 	String whois = (session.getAttribute("user") == null) ? "nobody" : session.getAttribute("user").toString(); 
+		
+	if(!whois.equals("nobody")){ 
+		JSONObject ob = new JSONObject(whois);
+		JSONObject obj = ob.getJSONObject("Users");
+		String foto = obj.getString("uri");
+		%>
+	<div class="main-container">
+        <header class="block">
+            <ul class="header-menu horizontal-list">
+                <li>
+                    <a class="header-menu-tab" href="home.jsp"><span class="icon fontawesome-user scnd-font-color"></span>Página inicial</a>
+                </li>
+             	
+                <li>
+                	<form method="POST" action="process">
+                		<input type="hidden" name="action" value="auth" />
+			    		<input type="hidden" name="log" value="false" />
+                    	<button class="header-menu-tab btn" type="submit" style="color: white;"><span class="icon fontawesome-remove scnd-font-color"></span>Sair da conta</button>
+                    </form>
+                    
+                </li>
+            </ul>
+            <div class="profile-menu">
+                <p id="nome"><%=obj.getString("nome") %><a href="#26"></a></p>
+                <div class="profile-picture small-profile-picture">
+                    <img width="40px" src="http://187.111.222.107:3516/files/<%=foto %>">
+				</div>
+            </div>
+        </header>
+
+        <div class="left-container container">
+            <div class="menu-box block">
+                <h2 class="titular">MENU</h2>
+                <ul class="menu-box-menu">
+                    <li>
+                        <a class="menu-box-tab" href="cadPart.jsp"><span class="icon entypo-cog scnd-font-color"></span>Configuração de time</a>
+                    </li>
+                    <li>
+                        <a class="menu-box-tab" href="partEvent.jsp"><span class="icon entypo-trash scnd-font-color"></span>Sair de evento</a>
+                    </li>                        
+                </ul>
+            </div>
+        </div>
+		
+        <div class="middle-container container">
+            <div class="profile block" style="width: 300px; padding-top: 2rem;">
+                
+                <div class="profile-picture big-profile-picture clear" >
+                    <img width="150px" alt="Anne Hathaway picture" src="http://187.111.222.107:3516/files/<%=foto %>" >
+                </div>
+                <h1 class="user-name" id="nome"><%=obj.getString("nome") %></h1> 
+                <h1 class="user-name" id="Cidade"><%=obj.getString("cidade") %> - <%=obj.getString("estado") %></h1>
+                <a class="add-event button" href="cadEvent.jsp">Criar Evento</a>
+            </div>
+         
+        </div>
+
+        <div class="right-container container">
+            <div class="calendar-day block">  
+                    <p class="the-day" style="padding-top: 2rem;">Veja os eventos disponiveis!</p>
+                    <div style="border-bottom: 6rem solid transparent;"></div>
+                    <a class="add-event button" href="partEvent.jsp">Participar de evento</a>
+            </div>
+         
+        </div>
+    </div>
+    <%}else{%>
+    	<script>window.location.href = "http://"+b632ee66b82e.ngrok.io+"/EventCreator/login.jsp";</script>
+    <%} %>
+</body>
+</html>

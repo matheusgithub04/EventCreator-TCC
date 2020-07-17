@@ -1,0 +1,356 @@
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(https://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial); 
+/* SIMBOLOS */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}   
+
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-cloudy:before {
+	content: "\e60f";
+}
+.icon-sun:before {
+	content: "\e610";
+}
+.icon-cloudy2:before {
+	content: "\e611";
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+   }
+  
+body {
+    font-family: 'SST W01 Roman','SST W02 Roman','SST W10 Roman','SST W15 Roman',Arial,Helvetica,sans-serif;
+    background-color: #ff1040;
+    width: 100%;
+    height: 100%;
+    min-width: 20%;
+    min-height: 20%;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+#navbar{
+    width: 100%;
+    height: 50%;
+}
+
+
+#logo{
+    max-width: 280px;
+    min-width: 200px;
+    height: 48px;
+    max-height: 80;
+    margin-left: 5rem;
+   
+}
+
+.nav-item {
+    float: right;
+    display: flex;
+    justify-content: end;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+
+.navbar-toggler{
+    background-color: white;
+    text-align: center;
+}
+   .main{
+   
+    margin: 2%;
+   }
+   
+   .card{
+        width: 15%;
+        min-height: 400px;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px; 
+        margin: 2%;
+       }
+   
+   .image img{
+     width: 100%;
+	 height: 150px;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     
+   
+    
+    }
+   
+   .title{
+    
+     text-align: center;
+     padding: 10px;
+     
+    }
+   
+   h1{
+     font-size: 20px;
+    }
+   
+   .des{
+     padding: 3px;
+     text-align: center;
+    
+     padding-top: 10px;
+           border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+   }
+   .navWidth {
+	  width: 10%;
+	  margin-top: -5px;
+	}
+   button{
+     margin-bottom: 10px;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 5px;
+     padding:10px;
+	 width: 90%;
+   }
+   button:hover{
+     background-color: black;
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+
+	p {
+	   overflow: hidden;
+	   text-overflow: ellipsis;
+	   display: -webkit-box;
+	   -webkit-line-clamp: 2; /* number of lines to show */
+	   -webkit-box-orient: vertical;
+	}
+	
+	#teste {
+	   overflow: hidden;
+	   text-overflow: ellipsis;
+	   display: -webkit-box;
+	   -webkit-line-clamp: 1; /* number of lines to show */
+	   -webkit-box-orient: vertical;
+	}
+	#teste1 {
+	   overflow: hidden;
+	   text-overflow: ellipsis;
+	   display: -webkit-box;
+	   -webkit-line-clamp: 1; /* number of lines to show */
+	   -webkit-box-orient: vertical;
+	   margin-bottom: 0px;
+	}
+
+	h1 {
+	   overflow: hidden;
+	   text-overflow: ellipsis;
+	   display: -webkit-box;
+	   -webkit-line-clamp: 1; /* number of lines to show */
+	   -webkit-box-orient: vertical;
+	}
+
+   .footer
+{
+  background-color:#ff1040;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:white;
+  font-family: 'SST W01 Roman','SST W02 Roman','SST W10 Roman','SST W15 Roman',Arial,Helvetica,sans-serif;
+}
+
+.footer h6{
+  color:white;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.footer a{
+  color:white;
+}
+
+.footer a:hover{
+  color:black;
+  text-decoration:none;
+}
+
+.footer-links{
+  padding-left:0px;
+  list-style:none;
+}
+
+.footer-links li{
+  display:block
+}
+
+.opcModal {
+    position: fixed;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    opacity: 0.6;
+    display: none;
+}
+
+.Modal {
+  position: fixed;
+  background-color: white;
+  height: 600px;
+  width: 37.5%;
+  left: 31%;
+  top: 10%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  font-family: Helvetica;
+  font-weight: 600;
+  padding-top: 20px;
+  display: none;
+}
+
+.closeModal {
+  position: fixed;
+  left: 29.8%;
+  border-radius: 500px;
+  top: 8.5%;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  font-family: magneto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ff1040;
+  border: 1px solid white;
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .closeModal {
+    top: 8.5%;
+    left: 23.8%;
+  }
+
+  .Modal{
+    height: 600px;
+    width: 50%;
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navWidth {
+    width: 20%;
+  }
+  .closeModal {
+    top: 8.5%;
+    left: 0%;
+  }
+
+  .Modal{
+    height: 600px;
+    width: 100%;
+    left: 0%;
+  }
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.orgImage {
+  height: 150px;
+  width: 150px;
+  border: 3px solid #ff1040;
+  box-shadow: 0 4px 8px 0 rgba(255, 20, 60, 1), 0 6px 20px 0 rgba(255, 20, 60, 1);
+  border-radius: 100px;
+  margin-bottom: 30px;
+  background-size: cover;
+}
+
+.nameOrg {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.line {
+  border-bottom: 2px solid black;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.divControl {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.boxControl {
+  cursor: pointer;
+  margin-left: 15px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #f7eeee;
+}
+
+/* <div class="title">Organizador</div>
+<div class="orgImage"></div>
+<div class="nameOrg">David Tolentino</div>
+<div class="line"></div>
+<div class="divControl"></div>
+<div class="line"></div> */
