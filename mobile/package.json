@@ -33,7 +33,7 @@
     "react-native-masked-text": "^1.13.0",
     "react-native-picker-select": "^6.6.0",
     "react-native-prompt-android": "^1.1.0",
-    "react-native-reanimated": "~1.4.0",
+    "react-native-reanimated": "~2.10.0",
     "react-native-router-flux": "^4.2.0",
     "react-native-safe-modules": "^1.0.0",
     "react-native-screens": "2.0.0-alpha.12",
